@@ -1,0 +1,16 @@
+{
+  "name": "CV Live - Interactive Resume",
+  "short_name": "CV Live",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "description": "Современное интерактивное онлайн-резюме.",
+  "icons": [
+    {
+      "src": "assets/avatar.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио | Мухамеджанов Марсель Ильдарович</title>
+    <meta name="theme-color" content="#0b1020" />
+    <meta
+      name="description"
+      content="Интерактивное онлайн-резюме: опыт, навыки, проекты и контакты."
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/avatar.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+
+    <header class="header">
+      <a href="#home" class="logo">CV<span>Live</span></a>
+      <nav class="nav">
+        <a href="#about" data-i18n="nav_about">Обо мне</a>
+        <a href="#skills" data-i18n="nav_skills">Навыки</a>
+        <a href="#projects" data-i18n="nav_projects">Проекты</a>
+        <a href="#" id="openPhonePanelNav" data-i18n="nav_contact">Контакты</a>
+      </nav>
+      <div class="lang-select-wrap" title="Language">
+        <span>🌐</span>
+        <select id="langSelect" aria-label="Выбор языка">
+          <option value="de">Deutsch</option>
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+          <option value="ru" selected>Русский</option>
+          <option value="tr">Türkçe</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Сменить тему">🌙</button>
+    </header>
+
+    <main id="home">
+      <section class="hero reveal">
+        <div>
+          <p class="kicker" data-i18n="hero_kicker">Cybersecurity Specialist</p>
+          <h1 data-i18n-html="hero_title">Привет, я <span class="accent">Марсель Мухамеджанов Ильдарович</span></h1>
+          <p class="hero-text" data-i18n="hero_text">
+            Занимаюсь кибербезопасностью: защищаю инфраструктуру, анализирую
+            уязвимости и повышаю устойчивость систем к атакам.
+          </p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="#projects" data-i18n="hero_projects_btn">Смотреть проекты</a>
+            <button class="btn btn-ghost" id="openPhonePanelBtn" type="button" data-i18n="hero_contact_btn">Связаться</button>
+          </div>
+        </div>
+        <div class="stats-card floating-card">
+          <img src="assets/avatar.svg" alt="Портрет в векторном стиле" class="avatar" loading="lazy" />
+          <h3 data-i18n="stats_title">Коротко обо мне</h3>
+          <ul>
+            <li data-i18n-html="stats_item_1"><strong>1</strong> год в информационной безопасности</li>
+            <li data-i18n-html="stats_item_2"><strong>2 года</strong> практики в пентесте и security-аудите до официальной работы</li>
+            <li data-i18n-html="stats_item_3"><strong>Неформально</strong> вел задачи сетевого администрирования в проектной практике</li>
+            <li data-i18n-html="stats_item_4"><strong>200+</strong> реализованных проектов в разных направлениях</li>
+            <li data-i18n-html="stats_item_5"><strong>24/7</strong> фокус на надежность и безопасность</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <h2 data-i18n="about_title">Обо мне</h2>
+        <p data-i18n="about_text">
+          Я специалист по ИБ: провожу аудит безопасности, тестирование на
+          проникновение и выстраиваю процессы защиты. До официальной работы в
+          ИБ два года занимался пентестом и аудитом в формате частной практики.
+          Также есть проектный неформальный опыт сетевого администрирования.
+          При этом умею во frontend, поэтому могу закрывать задачи на стыке
+          безопасности и интерфейсов.
+        </p>
+      </section>
+
+      <section id="education" class="section reveal">
+        <h2 data-i18n="edu_title">Образование</h2>
+        <div class="skills-matrix">
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="edu_college">Колледж</h3>
+              <span class="level level-mid" data-i18n="edu_college_level">Завершено</span>
+            </div>
+            <p data-i18n="edu_college_text">Программист по образованию (среднее профессиональное образование).</p>
+          </article>
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="edu_uni">Институт</h3>
+              <span class="level level-junior" data-i18n="edu_uni_level">В процессе</span>
+            </div>
+            <p data-i18n="edu_uni_text">Обучаюсь на последнем курсе, продолжаю развиваться в ИБ и разработке.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <h2 data-i18n="skills_title">Навыки</h2>
+        <div class="skills-matrix">
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="skills_langdev_title">Языки и разработка</h3>
+              <span class="level level-mid" data-i18n="level_middle">Middle</span>
+            </div>
+            <div class="lang-marquee" aria-label="Логотипы языков программирования">
+              <div class="lang-track">
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />Java</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />C</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />C++</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />C#</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />Python</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua" />Lua</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" />Ruby</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />TypeScript</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" />Sass</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SCSS" />SCSS</span>
+                <span class="lang-pill"><img src="assets/tailwindcss.svg" alt="Tailwind CSS" />Tailwind</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />Java</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />C</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />C++</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />C#</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />Python</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua" />Lua</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" />Ruby</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />TypeScript</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" />Sass</span>
+                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SCSS" />SCSS</span>
+                <span class="lang-pill"><img src="assets/tailwindcss.svg" alt="Tailwind CSS" />Tailwind</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="ai_title">AI и автоматизация</h3>
+              <span class="level level-mid" data-i18n="level_middle">Middle</span>
+            </div>
+            <p data-i18n="ai_text">Использование AI для анализа кода и уязвимостей, ускорение pentest/appsec задач, автоматизация рутинных процессов через AI-инструменты, prompt engineering для рабочих сценариев.</p>
+          </article>
+
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="skills_os_title">ОС и администрирование</h3>
+              <span class="level level-senior" data-i18n="level_senior">Senior</span>
+            </div>
+            <p data-i18n="skills_os_text">Linux Administration, Windows Server, Active Directory, Kali Linux, OSQuery, Velociraptor</p>
+          </article>
+
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="skills_networks_title">Сети</h3>
+              <span class="level level-senior" data-i18n="level_senior">Senior</span>
+            </div>
+            <p data-i18n="skills_networks_text">TCP/IP, OSI Model, DNS/DHCP, Routing & Switching, VLAN/VPN, Firewall Rules, NAT/PAT, Wireshark, Suricata, Zeek</p>
+          </article>
+
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="skills_pentest_title">Pentest</h3>
+              <span class="level level-senior" data-i18n="level_senior">Senior</span>
+            </div>
+            <p data-i18n="skills_pentest_text">Nmap, Metasploit, Burp Suite, OWASP ZAP, Nikto, Gobuster, SQLMap, Hydra, John the Ripper, Hashcat</p>
+          </article>
+
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="skills_appsec_title">AppSec / Code Security</h3>
+              <span class="level level-senior" data-i18n="level_senior">Senior</span>
+            </div>
+            <p data-i18n="skills_appsec_text">Semgrep, Snyk, SonarQube, Trivy, Dependency-Check, Checkmarx, GitHub Advanced Security, DefectDojo</p>
+          </article>
+
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="skills_soc_title">SOC / SIEM / IR</h3>
+              <span class="level level-senior" data-i18n="level_senior">Senior</span>
+            </div>
+            <p data-i18n="skills_soc_text">Splunk, Wazuh, ELK Stack, Graylog, TheHive, Cortex, MISP, CrowdSec</p>
+          </article>
+
+          <article class="matrix-row">
+            <div class="matrix-head">
+              <h3 data-i18n="skills_devops_title">DevOps и инструменты</h3>
+              <span class="level level-junior" data-i18n="level_junior">Junior+</span>
+            </div>
+            <p data-i18n="skills_devops_text">Docker, VMware/VirtualBox, Git/GitHub/GitLab, CI/CD, Vite, Figma</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <h2 data-i18n="projects_title">Проекты</h2>
+        <div class="projects-strip" id="projectsStrip">
+          <article class="project-card open-modal-btn" data-modal="projectModal1" tabindex="0" role="button">
+            <img
+              src="assets/projects/security-dashboard.svg"
+              alt="Иллюстрация проекта Security Dashboard"
+              class="project-image"
+              loading="lazy"
+            />
+            <h3 data-i18n="project_1_title">Security Dashboard</h3>
+            <p data-i18n="project_1_text">
+              Панель мониторинга инцидентов с приоритизацией рисков и
+              визуализацией уязвимостей по системам.
+            </p>
+          </article>
+          <article class="project-card open-modal-btn" data-modal="projectModal2" tabindex="0" role="button">
+            <img
+              src="assets/projects/vulnerability-scanner.svg"
+              alt="Иллюстрация проекта Vulnerability Scanner UI"
+              class="project-image"
+              loading="lazy"
+            />
+            <h3 data-i18n="project_2_title">Vulnerability Scanner UI</h3>
+            <p data-i18n="project_2_text">
+              Интерфейс для результатов сканирования: CVE, severity, remediation
+              шаги и экспорт отчетов.
+            </p>
+          </article>
+          <article class="project-card open-modal-btn" data-modal="projectModal3" tabindex="0" role="button">
+            <img
+              src="assets/projects/soc-landing.svg"
+              alt="Иллюстрация проекта SOC Landing"
+              class="project-image"
+              loading="lazy"
+            />
+            <h3 data-i18n="project_3_title">SOC Landing</h3>
+            <p data-i18n="project_3_text">
+              Лендинг для SOC-сервиса с акцентом на доверие, SLA и быструю
+              коммуникацию с клиентами.
+            </p>
+          </article>
+          <article class="project-card open-modal-btn" data-modal="projectModal4" tabindex="0" role="button">
+            <img
+              src="assets/projects/security-dashboard.svg"
+              alt="Иллюстрация проекта Network Hardening Lab"
+              class="project-image"
+              loading="lazy"
+            />
+            <h3 data-i18n="project_4_title">Network Hardening Lab</h3>
+            <p data-i18n="project_4_text">
+              Практический стенд по сегментации сети, настройке firewall rules,
+              VPN и мониторингу сетевых аномалий.
+            </p>
+          </article>
+          <article class="project-card open-modal-btn" data-modal="projectModal5" tabindex="0" role="button">
+            <img
+              src="assets/projects/vulnerability-scanner.svg"
+              alt="Иллюстрация проекта AppSec CI Pipeline"
+              class="project-image"
+              loading="lazy"
+            />
+            <h3 data-i18n="project_5_title">AppSec CI Pipeline</h3>
+            <p data-i18n="project_5_text">
+              Интеграция SAST/SCA/Container scanning в CI: Semgrep, Snyk, Trivy
+              с отчетами и автоматизацией triage.
+            </p>
+          </article>
+          <article class="project-card open-modal-btn" data-modal="projectModal6" tabindex="0" role="button">
+            <img
+              src="assets/projects/soc-landing.svg"
+              alt="Иллюстрация проекта Incident Response Playbooks"
+              class="project-image"
+              loading="lazy"
+            />
+            <h3 data-i18n="project_6_title">Incident Response Playbooks</h3>
+            <p data-i18n="project_6_text">
+              Набор IR-сценариев и шаблонов реагирования для SOC: от алерта до
+              пост-инцидентного отчета и lessons learned.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <div id="projectModal1" class="modal" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" data-close-modal>✕</button>
+          <h3 data-i18n="modal_1_title">Security Dashboard</h3>
+          <p data-i18n="modal_1_text">Центр мониторинга инцидентов: агрегация логов, риск-скоринг, таймлайн событий и приоритеты реагирования.</p>
+        </div>
+      </div>
+      <div id="projectModal2" class="modal" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" data-close-modal>✕</button>
+          <h3 data-i18n="modal_2_title">Vulnerability Scanner UI</h3>
+          <p data-i18n="modal_2_text">Интерфейс анализа уязвимостей с triage по CVSS, дедупликацией и назначением remediation-задач.</p>
+        </div>
+      </div>
+      <div id="projectModal3" class="modal" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" data-close-modal>✕</button>
+          <h3 data-i18n="modal_3_title">SOC Landing</h3>
+          <p data-i18n="modal_3_text">Лендинг сервиса с акцентом на SLA, процесс онбординга и прозрачную коммуникацию при инцидентах.</p>
+        </div>
+      </div>
+      <div id="projectModal4" class="modal" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" data-close-modal>✕</button>
+          <h3 data-i18n="modal_4_title">Network Hardening Lab</h3>
+          <p data-i18n="modal_4_text">Лаборатория для практики хардненинга: сегментация VLAN, VPN-туннели, firewall policy и проверка устойчивости.</p>
+        </div>
+      </div>
+      <div id="projectModal5" class="modal" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" data-close-modal>✕</button>
+          <h3 data-i18n="modal_5_title">AppSec CI Pipeline</h3>
+          <p data-i18n="modal_5_text">Пайплайн DevSecOps со сканированием кода и зависимостей, quality gates и автоматическим формированием отчетов.</p>
+        </div>
+      </div>
+      <div id="projectModal6" class="modal" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" data-close-modal>✕</button>
+          <h3 data-i18n="modal_6_title">Incident Response Playbooks</h3>
+          <p data-i18n="modal_6_text">Стандартизированные playbooks для SOC: классификация инцидента, containment, eradication и post-mortem.</p>
+        </div>
+      </div>
+
+    </main>
+
+    <aside id="phonePanel" class="phone-panel" aria-hidden="true">
+      <div class="phone-shell">
+        <div class="phone-notch"></div>
+        <button class="phone-close" id="closePhonePanel" aria-label="Закрыть контакты">✕</button>
+        <h3 data-i18n="contact_title">Связаться</h3>
+        <p class="phone-sub" data-i18n="contact_subtitle">Быстрые контакты</p>
+        <div class="phone-contact-list">
+          <a href="tel:+79092951115" data-i18n="contact_phone">📞 +7 (909) 295-11-15</a>
+          <a href="mailto:marselmuhamedzanoa@gmail.com" data-i18n="contact_email">✉️ marselmuhamedzanoa@gmail.com</a>
+          <a href="https://t.me/llfatell" target="_blank" rel="noreferrer" data-i18n="contact_telegram">💬 Telegram: @llfatell</a>
+          <a href="https://github.com/HARLEQU1IN" target="_blank" rel="noreferrer" data-i18n="contact_github">🐙 GitHub: HARLEQU1IN</a>
+        </div>
+      </div>
+    </aside>
+
+    <footer class="footer">© <span id="year"></span> Марсель Мухамеджанов Ильдарович</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

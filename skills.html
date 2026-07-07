@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Навыки | CV Live</title>
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/avatar.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <header class="header">
+      <a href="index.html" class="logo">CV<span>Live</span></a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a class="active" href="skills.html">Навыки</a>
+        <a href="projects.html">Проекты</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Сменить тему">🌙</button>
+    </header>
+
+    <main>
+      <section class="section reveal">
+        <h1>Roadmap навыков</h1>
+        <p class="hero-text">Выбери направление — откроется дерево развития и инструменты.</p>
+        <div class="filters roadmap-filters">
+          <button class="chip active roadmap-btn" data-roadmap="pentest">Pentest</button>
+          <button class="chip roadmap-btn" data-roadmap="appsec">AppSec</button>
+          <button class="chip roadmap-btn" data-roadmap="soc">SOC</button>
+          <button class="chip roadmap-btn" data-roadmap="networks">Networks</button>
+          <button class="chip roadmap-btn" data-roadmap="os">OS/Admin</button>
+        </div>
+
+        <div class="roadmap-panel" data-roadmap-panel="pentest">
+          <div class="tree-grid">
+            <article class="tree-node"><h3>Recon</h3><p>Nmap, DNS enum, Gobuster, Nikto</p></article>
+            <article class="tree-node"><h3>Exploitation</h3><p>Metasploit, SQLMap, Hydra</p></article>
+            <article class="tree-node"><h3>Web Pentest</h3><p>Burp Suite, OWASP ZAP</p></article>
+            <article class="tree-node"><h3>Reporting</h3><p>PoC, remediation, risk rating</p></article>
+          </div>
+        </div>
+
+        <div class="roadmap-panel hide" data-roadmap-panel="appsec">
+          <div class="tree-grid">
+            <article class="tree-node"><h3>SAST</h3><p>Semgrep, SonarQube, Checkmarx</p></article>
+            <article class="tree-node"><h3>SCA</h3><p>Snyk, Trivy, Dependency-Check</p></article>
+            <article class="tree-node"><h3>Code Review</h3><p>Threat modeling, secure patterns</p></article>
+            <article class="tree-node"><h3>DevSecOps</h3><p>GitHub Advanced Security, DefectDojo</p></article>
+          </div>
+        </div>
+
+        <div class="roadmap-panel hide" data-roadmap-panel="soc">
+          <div class="tree-grid">
+            <article class="tree-node"><h3>Log Pipeline</h3><p>ELK Stack, Graylog, Wazuh</p></article>
+            <article class="tree-node"><h3>Detection</h3><p>Splunk rules, Sigma-style logic</p></article>
+            <article class="tree-node"><h3>IR Stack</h3><p>TheHive, Cortex, MISP</p></article>
+            <article class="tree-node"><h3>Network Telemetry</h3><p>Suricata, Zeek, OSQuery, Velociraptor</p></article>
+          </div>
+        </div>
+
+        <div class="roadmap-panel hide" data-roadmap-panel="networks">
+          <div class="tree-grid">
+            <article class="tree-node"><h3>Foundations</h3><p>TCP/IP, OSI Model, subnetting</p></article>
+            <article class="tree-node"><h3>Services</h3><p>DNS, DHCP, NAT</p></article>
+            <article class="tree-node"><h3>Enterprise</h3><p>Routing & Switching, VLAN, VPN</p></article>
+            <article class="tree-node"><h3>Defense</h3><p>Firewall rules, segmentation, hardening</p></article>
+          </div>
+        </div>
+
+        <div class="roadmap-panel hide" data-roadmap-panel="os">
+          <div class="tree-grid">
+            <article class="tree-node"><h3>Linux</h3><p>Linux administration, hardening, audit</p></article>
+            <article class="tree-node"><h3>Windows</h3><p>Windows Server, Active Directory</p></article>
+            <article class="tree-node"><h3>Scripting</h3><p>Bash, PowerShell automation</p></article>
+            <article class="tree-node"><h3>Virtualization</h3><p>Docker, VMware, VirtualBox</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© <span id="year"></span> Ваше имя</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

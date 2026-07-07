@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проекты | CV Live</title>
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/avatar.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <header class="header">
+      <a href="index.html" class="logo">CV<span>Live</span></a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="skills.html">Навыки</a>
+        <a class="active" href="projects.html">Проекты</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Сменить тему">🌙</button>
+    </header>
+
+    <main>
+      <section class="section reveal">
+        <h1>Проекты</h1>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Security Dashboard</h3>
+            <p>Мониторинг инцидентов, статус активов, severity heatmap.</p>
+            <button class="btn btn-primary open-modal-btn" data-modal="projectOne">Подробнее</button>
+          </article>
+          <article class="project-card">
+            <h3>Vulnerability Scanner UI</h3>
+            <p>CVE-поток, triage, remediation-трекинг и экспорт репортов.</p>
+            <button class="btn btn-primary open-modal-btn" data-modal="projectTwo">Подробнее</button>
+          </article>
+          <article class="project-card">
+            <h3>SOC Landing</h3>
+            <p>Многоэкранный интерфейс сервиса с интерактивными блоками.</p>
+            <button class="btn btn-primary open-modal-btn" data-modal="projectThree">Подробнее</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div id="projectOne" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" data-close-modal>✕</button>
+        <h3>Security Dashboard</h3>
+        <p>Стек: ELK + Wazuh + custom UI. Реалтайм карточки, фильтры и корреляция событий.</p>
+      </div>
+    </div>
+    <div id="projectTwo" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" data-close-modal>✕</button>
+        <h3>Vulnerability Scanner UI</h3>
+        <p>Стек: AppSec pipeline. Приоритизация по CVSS, SLA и автогенерация задач.</p>
+      </div>
+    </div>
+    <div id="projectThree" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" data-close-modal>✕</button>
+        <h3>SOC Landing</h3>
+        <p>UX-фокус: многостраничная структура, motion UI, popup-окна и адаптивные панели.</p>
+      </div>
+    </div>
+
+    <footer class="footer">© <span id="year"></span> Ваше имя</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
