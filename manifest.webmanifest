@@ -1,10 +1,10 @@
 {
-  "name": "CV Live - Interactive Resume",
-  "short_name": "CV Live",
-  "start_url": "/",
+  "name": "Марсель Мухамеджанов · Cybersecurity",
+  "short_name": "Marsel",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#0b1020",
-  "theme_color": "#0b1020",
+  "background_color": "#101719",
+  "theme_color": "#101719",
   "description": "Современное интерактивное онлайн-резюме.",
   "icons": [
     {
@@ -12,5 +12,6 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ]
+  ],
+  "scope": "./"
 }

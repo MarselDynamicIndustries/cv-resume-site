@@ -1,54 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Контакты | CV Live</title>
-    <meta name="theme-color" content="#0b1020" />
-    <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="icon" href="assets/avatar.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="background-glow"></div>
-    <header class="header">
-      <a href="index.html" class="logo">CV<span>Live</span></a>
-      <nav class="nav">
-        <a href="index.html">Главная</a>
-        <a href="skills.html">Навыки</a>
-        <a href="projects.html">Проекты</a>
-        <a class="active" href="contact.html">Контакты</a>
-      </nav>
-      <button id="themeToggle" class="theme-toggle" aria-label="Сменить тему">🌙</button>
-    </header>
-
-    <main>
-      <section class="section reveal">
-        <h1>Контакты</h1>
-        <p class="hero-text">Открыт к стажировке и junior/middle позициям в ИБ.</p>
-        <form id="contactForm" class="contact-form">
-          <input type="text" id="name" placeholder="Ваше имя" required />
-          <input type="email" id="email" placeholder="Email" required />
-          <textarea id="message" rows="4" placeholder="Сообщение..." required></textarea>
-          <button class="btn btn-primary" type="submit">Отправить</button>
-          <p class="form-status" id="formStatus" aria-live="polite"></p>
-        </form>
-      </section>
-
-      <section class="section reveal">
-        <h2>FAQ</h2>
-        <div class="faq-item">
-          <button class="faq-btn">Какие направления приоритетны?</button>
-          <div class="faq-body">Pentest, AppSec и SOC роли с практическими задачами.</div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-btn">Есть ли frontend опыт?</button>
-          <div class="faq-body">Да, умею закрывать secure UI/UX и связку с backend/API.</div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">© <span id="year"></span> Ваше имя</footer>
-    <script src="script.js"></script>
-  </body>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Контакты | Марсель Мухамеджанов</title>
+<meta content="#101719" name="theme-color"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="assets/avatar.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="background-glow"></div>
+<header class="header">
+<a class="logo" href="index.html">marsel<span>.dev</span></a>
+<nav class="nav">
+<a href="index.html">Главная</a>
+<a href="skills.html">Навыки</a>
+<a href="projects.html">Проекты</a>
+<a class="active" href="contact.html">Контакты</a>
+</nav>
+<button aria-label="Сменить тему" class="theme-toggle" id="themeToggle">🌙</button>
+</header>
+<main>
+<section class="section reveal">
+<h1>Контакты</h1>
+<p class="hero-text">Открыт к стажировке и Junior / Junior+ позициям в ИБ.</p>
+<div class="phone-contact-list"><a href="mailto:marselmuhamedzanoa@gmail.com">Email · marselmuhamedzanoa@gmail.com</a><a href="https://t.me/llfatell" rel="noreferrer" target="_blank">Telegram · @llfatell</a><a href="https://github.com/MarselDynamicIndustries" rel="noreferrer" target="_blank">GitHub · MarselDynamicIndustries</a><a href="tel:+79092951115">Телефон · +7 (909) 295-11-15</a></div>
+</section>
+<section class="section reveal">
+<h2>FAQ</h2>
+<div class="faq-item">
+<button class="faq-btn">Какие направления приоритетны?</button>
+<div class="faq-body">Pentest, AppSec и SOC роли с практическими задачами.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn">Есть ли frontend опыт?</button>
+<div class="faq-body">Есть опыт разработки интерфейсов. Продолжаю изучать frontend и работу с API.</div>
+</div>
+</section>
+</main>
+<footer class="footer">© <span id="year"></span> Мухамеджанов Марсель Ильдарович</footer>
+<script src="script.js"></script>
+</body>
 </html>

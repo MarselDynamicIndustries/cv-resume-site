@@ -1,349 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио | Мухамеджанов Марсель Ильдарович</title>
-    <meta name="theme-color" content="#0b1020" />
-    <meta
-      name="description"
-      content="Интерактивное онлайн-резюме: опыт, навыки, проекты и контакты."
-    />
-    <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="icon" href="assets/avatar.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="background-glow"></div>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Портфолио | Мухамеджанов Марсель Ильдарович</title>
+<meta content="#101719" name="theme-color"/>
+<meta content="Марсель Мухамеджанов — Junior / Junior+ в информационной безопасности. Практический опыт, навыки и личные проекты с открытым кодом." name="description"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="assets/avatar.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body><div aria-hidden="true" class="scroll-progress"></div><div aria-hidden="true" class="ambient-field"><i></i><i></i></div>
+<div class="background-glow"></div>
+<header class="header">
+<a class="logo" href="#home">marsel<span>.dev</span></a>
+<nav class="nav">
+<a data-i18n="nav_about" href="#about">Обо мне</a>
+<a data-i18n="nav_skills" href="#skills">Навыки</a>
+<a data-i18n="nav_projects" href="#projects">Проекты</a>
+<a data-i18n="nav_contact" href="#contact">Контакты</a>
+</nav>
+<details class="language-picker" id="languagePicker"><summary aria-label="Language"><span aria-hidden="true">◎</span> <span id="languageLabel">Русский</span><span aria-hidden="true" class="language-chevron">⌄</span></summary><div aria-label="Language" class="language-menu"><button aria-pressed="true" data-language="ru" lang="ru" type="button">Русский<span aria-hidden="true">✓</span></button><button aria-pressed="false" data-language="en" lang="en" type="button">English<span aria-hidden="true">✓</span></button><button aria-pressed="false" data-language="de" lang="de" type="button">Deutsch<span aria-hidden="true">✓</span></button><button aria-pressed="false" data-language="es" lang="es" type="button">Español<span aria-hidden="true">✓</span></button><button aria-pressed="false" data-language="fr" lang="fr" type="button">Français<span aria-hidden="true">✓</span></button><button aria-pressed="false" data-language="it" lang="it" type="button">Italiano<span aria-hidden="true">✓</span></button><button aria-pressed="false" data-language="tr" lang="tr" type="button">Türkçe<span aria-hidden="true">✓</span></button><button aria-pressed="false" data-language="zh" lang="zh" type="button">中文<span aria-hidden="true">✓</span></button></div></details>
+<button aria-label="Сменить тему" class="theme-toggle" id="themeToggle">🌙</button>
+</header>
+<main id="home">
+<section class="hero hero-animated">
+<div>
+<p class="kicker" data-i18n="hero_kicker">Junior / Junior+ · Cybersecurity</p>
+<h1 data-i18n-html="hero_title">Привет, я<br/><span class="accent">Марсель Мухамеджанов</span></h1>
+<p class="hero-text" data-i18n="hero_text">Специалист по информационной безопасности уровня Junior / Junior+. Работаю на стыке AppSec, инфраструктуры и разработки: провожу проверки, готовлю рекомендации и создаю собственные приложения.</p>
+<div class="hero-focus" data-i18n="focus_text">Кибербезопасность · сети · разработка</div><div class="cta-group">
+<a class="btn btn-primary" data-i18n="hero_projects_btn" href="#projects">Смотреть проекты</a>
+<a class="btn btn-ghost" data-i18n="hero_contact_btn" href="#contact">Связаться</a>
+</div>
+</div>
+<div class="stats-card portrait-card">
+<img alt="Марсель Мухамеджанов" class="avatar" fetchpriority="high" height="1080" src="assets/marsel.png" width="1080"/>
+<h3 data-i18n="stats_title">Коротко обо мне</h3>
+<ul>
+<li data-i18n-html="stats_item_1"><strong>1</strong> год в информационной безопасности</li>
+<li data-i18n-html="stats_item_2"><strong>2 года</strong> практики в пентесте и security-аудите до официальной работы</li>
+<li data-i18n-html="stats_item_3"><strong>Неформально</strong> вел задачи сетевого администрирования в проектной практике</li>
+</ul>
+</div>
+</section>
+<section class="section reveal" id="about"><div class="section-heading"><p class="kicker">01 / ABOUT</p><h2 class="motion-heading" data-i18n="about_title">Обо мне</h2></div><div class="about-copy"><p data-i18n="about_text">Я Марсель Мухамеджанов. Около года работаю в информационной безопасности; до этого два года самостоятельно практиковался в пентесте и аудите. По образованию — программист, поэтому мне интересно не только проверять системы, но и понимать, как они устроены изнутри.</p><p data-i18n="about_more">В рабочей практике занимался аудитом веб-приложений, анализом кода, проверкой настроек серверов, сетевых сервисов и CI/CD. Готовил технические отчёты, формулировал рекомендации для разработчиков и администраторов, возвращался к задачам после исправлений и проверял результат.</p><p data-i18n="about_workstyle">Отдельное направление — инструменты автоматизации и документация по ИБ. Учусь связывать технические наблюдения с приоритетами бизнеса и объяснять результаты понятным языком. В личных проектах развиваю навыки frontend, Python и Flutter. Ищу команду, где смогу приносить пользу на задачах Junior / Junior+ и расти через практику и обратную связь.</p></div></section><section class="section experience-section" id="experience"><div class="experience-heading"><div><p class="kicker">02 / EXPERIENCE</p><h2 class="motion-heading" data-i18n="experience_title">Практический опыт</h2></div><p class="experience-period" data-i18n="experience_intro">Информационная безопасность · 2025–2026</p></div><div class="experience-grid"><article class="experience-card motion-item" style="--stagger:0ms"><span aria-hidden="true" class="experience-index">01</span><h3 data-i18n="exp_web_title">Веб-приложения и код</h3><p data-i18n="exp_web_text">Проводил проверки веб-приложений и анализ исходного кода. Описывал результаты, готовил рекомендации и повторно проверял внесённые исправления.</p></article><article class="experience-card motion-item" style="--stagger:80ms"><span aria-hidden="true" class="experience-index">02</span><h3 data-i18n="exp_infra_title">Инфраструктура и CI/CD</h3><p data-i18n="exp_infra_text">Проверял конфигурации серверов, сетевых сервисов и процессов сборки. Участвовал в задачах управления доступом и безопасного обращения с секретами.</p></article><article class="experience-card motion-item" style="--stagger:0ms"><span aria-hidden="true" class="experience-index">03</span><h3 data-i18n="exp_auto_title">Автоматизация проверок</h3><p data-i18n="exp_auto_text">Работал над внутренними инструментами для проверок безопасности и инвентаризации. Использовал скрипты и специализированные средства, чтобы упростить сбор и обработку результатов.</p></article><article class="experience-card motion-item" style="--stagger:80ms"><span aria-hidden="true" class="experience-index">04</span><h3 data-i18n="exp_docs_title">Документация и взаимодействие</h3><p data-i18n="exp_docs_text">Готовил отчёты, рекомендации и документы по ИБ. Участвовал в разборе инцидентов, приоритизации задач и проверке выполнения мер вместе с технической командой.</p></article></div></section>
+<section class="section reveal" id="education">
+<h2 class="motion-heading" data-i18n="edu_title">Образование</h2>
+<div class="skills-matrix">
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="edu_college">Колледж</h3>
+<span class="level level-mid" data-i18n="edu_college_level">Завершено</span>
+</div>
+<p data-i18n="edu_college_text">Программист по образованию (среднее профессиональное образование).</p>
+</article>
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="edu_uni">Институт</h3>
+<span class="level level-junior" data-i18n="edu_uni_level">В процессе</span>
+</div>
+<p data-i18n="edu_uni_text">Обучаюсь на последнем курсе, продолжаю развиваться в ИБ и разработке.</p>
+</article>
+</div>
+</section>
+<section class="section reveal" id="skills">
+<h2 class="motion-heading" data-i18n="skills_title">Навыки</h2><p class="section-intro" data-i18n="skills_note">Самооценка навыков: Junior / Junior+. Сложные задачи решаю с документацией и обратной связью более опытных коллег.</p>
+<div class="skills-matrix">
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="skills_langdev_title">Языки и разработка</h3>
+<span class="level level-mid" data-i18n="level_foundation">Junior</span>
+</div>
+<div class="tech-tags"><span>Java</span><span>C / C++</span><span>C#</span><span>Python</span><span>Lua</span><span>Ruby</span><span>TypeScript</span><span>Sass / SCSS</span><span>Tailwind CSS</span></div>
+</article>
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="ai_title">AI и автоматизация</h3>
+<span class="level level-mid" data-i18n="level_foundation">Junior</span>
+</div>
+<p data-i18n="ai_text">Использую AI как помощника при работе с кодом и документацией, пробую автоматизировать рутинные задачи. Проверяю предложенные решения.</p>
+</article>
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="skills_os_title">ОС и администрирование</h3>
+<span class="level level-practice" data-i18n="level_practice">Junior+</span>
+</div>
+<p data-i18n="skills_os_text">Linux Administration, Windows Server, Active Directory, Kali Linux, OSQuery, Velociraptor</p>
+</article>
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="skills_networks_title">Сети</h3>
+<span class="level level-practice" data-i18n="level_practice">Junior+</span>
+</div>
+<p data-i18n="skills_networks_text">TCP/IP, OSI Model, DNS/DHCP, Routing &amp; Switching, VLAN/VPN, Firewall Rules, NAT/PAT, Wireshark, Suricata, Zeek</p>
+</article>
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="skills_pentest_title">Pentest</h3>
+<span class="level level-practice" data-i18n="level_practice">Junior+</span>
+</div>
+<p data-i18n="skills_pentest_text">Nmap, Metasploit, Burp Suite, OWASP ZAP, Nikto, Gobuster, SQLMap, Hydra, John the Ripper, Hashcat</p>
+</article>
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="skills_appsec_title">AppSec / Code Security</h3>
+<span class="level level-junior" data-i18n="level_foundation">Junior</span>
+</div>
+<p data-i18n="skills_appsec_text">Semgrep, Snyk, SonarQube, Trivy, Dependency-Check, Checkmarx, GitHub Advanced Security, DefectDojo</p>
+</article>
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="skills_soc_title">SOC / SIEM / IR</h3>
+<span class="level level-junior" data-i18n="level_foundation">Junior</span>
+</div>
+<p data-i18n="skills_soc_text">Splunk, Wazuh, ELK Stack, Graylog, TheHive, Cortex, MISP, CrowdSec</p>
+</article>
+<article class="matrix-row motion-item">
+<div class="matrix-head">
+<h3 data-i18n="skills_devops_title">DevOps и инструменты</h3>
+<span class="level level-junior" data-i18n="level_junior">Junior+</span>
+</div>
+<p data-i18n="skills_devops_text">Docker, VMware/VirtualBox, Git/GitHub/GitLab, CI/CD, Vite, Figma</p>
+</article>
+</div>
+</section>
+<section class="section reveal" id="projects"><p class="kicker">03 / SELECTED WORK</p><h2 class="motion-heading" data-i18n="projects_title">Проекты</h2><p class="section-intro" data-i18n="projects_intro">Личные проекты с открытым кодом. Каждый показывает отдельную сторону моей практики — от локального хранения данных до интерфейсов и автоматизации.</p><div class="projects-strip curated-projects" id="projectsStrip"><article class="project-card motion-item" style="--stagger:0ms"><button aria-label="MarsFlow" class="project-cover open-modal-btn" data-modal="projectModal1" type="button"><img alt="" class="project-image" height="1024" loading="lazy" src="assets/projects/marsflow-cover.png" width="1536"/><span aria-hidden="true" class="project-number">01</span><span aria-hidden="true" class="cover-arrow">↗</span></button><div class="project-copy"><div class="project-stack">Flutter · Dart · SQLite</div><h3 data-i18n="project_1_title">MarsFlow</h3><p data-i18n="project_1_text">Локальное рабочее пространство для заметок, задач и файлов. Папки, теги, полнотекстовый поиск и импорт/экспорт данных. Проект на Flutter с SQLite; версия alpha.</p><div class="project-actions"><a data-i18n="project_source" href="https://github.com/MarselDynamicIndustries/MarsFlow" rel="noopener noreferrer" target="_blank">Код на GitHub</a><button class="text-button open-modal-btn" data-i18n="project_details" data-modal="projectModal1" type="button">О проекте</button></div></div></article><article class="project-card motion-item" style="--stagger:80ms"><button aria-label="MarsFlow Browser" class="project-cover open-modal-btn" data-modal="projectModal2" type="button"><img alt="" class="project-image" height="1024" loading="lazy" src="assets/projects/browser-cover.png" width="1536"/><span aria-hidden="true" class="project-number">02</span><span aria-hidden="true" class="cover-arrow">↗</span></button><div class="project-copy"><div class="project-stack">Firefox ESR · JavaScript</div><h3 data-i18n="project_2_title">MarsFlow Browser</h3><p data-i18n="project_2_text">Проект браузера на базе Firefox ESR: вертикальные вкладки, рабочие пространства и настройки приватности. В репозитории — overlay-модули, UI-превью и скрипты сборки; разработка продолжается.</p><div class="project-actions"><a data-i18n="project_source" href="https://github.com/MarselDynamicIndustries/marsflowbrowser" rel="noopener noreferrer" target="_blank">Код на GitHub</a><button class="text-button open-modal-btn" data-i18n="project_details" data-modal="projectModal2" type="button">О проекте</button></div></div></article><article class="project-card motion-item" style="--stagger:0ms"><button aria-label="MarsFlow Home Assistant" class="project-cover open-modal-btn" data-modal="projectModal3" type="button"><img alt="" class="project-image" height="1024" loading="lazy" src="assets/projects/home-cover.png" width="1536"/><span aria-hidden="true" class="project-number">03</span><span aria-hidden="true" class="cover-arrow">↗</span></button><div class="project-copy"><div class="project-stack">FastAPI · React · MQTT</div><h3 data-i18n="project_3_title">MarsFlow Home Assistant</h3><p data-i18n="project_3_text">Хаб умного дома для самостоятельного размещения: интерфейс устройств и комнат, HTTP/MQTT-интеграции, WebSocket и файловое хранилище. Python/FastAPI и React; часть интеграций ещё в разработке.</p><div class="project-actions"><a data-i18n="project_source" href="https://github.com/MarselDynamicIndustries/MarsFlowHomeAssistant" rel="noopener noreferrer" target="_blank">Код на GitHub</a><button class="text-button open-modal-btn" data-i18n="project_details" data-modal="projectModal3" type="button">О проекте</button></div></div></article><article class="project-card motion-item" style="--stagger:80ms"><button aria-label="Finance Calculator" class="project-cover open-modal-btn" data-modal="projectModal4" type="button"><img alt="" class="project-image" height="1024" loading="lazy" src="assets/projects/finance-cover.png" width="1536"/><span aria-hidden="true" class="project-number">04</span><span aria-hidden="true" class="cover-arrow">↗</span></button><div class="project-copy"><div class="project-stack">Python · PySide6 · SQLite</div><h3 data-i18n="project_4_title">Finance Calculator</h3><p data-i18n="project_4_text">Настольное приложение для личного бюджета: доходы и расходы, категории, цели, графики и экспорт. Python, PySide6 и SQLite; предусмотрены резервные копии данных.</p><div class="project-actions"><a data-i18n="project_source" href="https://github.com/MarselDynamicIndustries/FinanceCalculator" rel="noopener noreferrer" target="_blank">Код на GitHub</a><button class="text-button open-modal-btn" data-i18n="project_details" data-modal="projectModal4" type="button">О проекте</button></div></div></article></div><div aria-hidden="true" aria-labelledby="projectModal1Title" aria-modal="true" class="modal" id="projectModal1" role="dialog"><div class="modal-content"><button aria-label="Закрыть / Close" class="modal-close" data-close-modal="">✕</button><img alt="" class="modal-art" height="1024" loading="lazy" src="assets/projects/marsflow-cover.png" width="1536"/><div class="project-stack">Flutter · Dart · SQLite</div><h3 data-i18n="modal_1_title" id="projectModal1Title">MarsFlow</h3><p data-i18n="modal_1_text">Локальное рабочее пространство для заметок, задач и файлов. Папки, теги, полнотекстовый поиск и импорт/экспорт данных. Проект на Flutter с SQLite; версия alpha.</p><a class="btn btn-primary" data-i18n="project_source" href="https://github.com/MarselDynamicIndustries/MarsFlow" rel="noopener noreferrer" target="_blank">Код на GitHub</a></div></div><div aria-hidden="true" aria-labelledby="projectModal2Title" aria-modal="true" class="modal" id="projectModal2" role="dialog"><div class="modal-content"><button aria-label="Закрыть / Close" class="modal-close" data-close-modal="">✕</button><img alt="" class="modal-art" height="1024" loading="lazy" src="assets/projects/browser-cover.png" width="1536"/><div class="project-stack">Firefox ESR · JavaScript</div><h3 data-i18n="modal_2_title" id="projectModal2Title">MarsFlow Browser</h3><p data-i18n="modal_2_text">Проект браузера на базе Firefox ESR: вертикальные вкладки, рабочие пространства и настройки приватности. В репозитории — overlay-модули, UI-превью и скрипты сборки; разработка продолжается.</p><a class="btn btn-primary" data-i18n="project_source" href="https://github.com/MarselDynamicIndustries/marsflowbrowser" rel="noopener noreferrer" target="_blank">Код на GitHub</a></div></div><div aria-hidden="true" aria-labelledby="projectModal3Title" aria-modal="true" class="modal" id="projectModal3" role="dialog"><div class="modal-content"><button aria-label="Закрыть / Close" class="modal-close" data-close-modal="">✕</button><img alt="" class="modal-art" height="1024" loading="lazy" src="assets/projects/home-cover.png" width="1536"/><div class="project-stack">FastAPI · React · MQTT</div><h3 data-i18n="modal_3_title" id="projectModal3Title">MarsFlow Home Assistant</h3><p data-i18n="modal_3_text">Хаб умного дома для самостоятельного размещения: интерфейс устройств и комнат, HTTP/MQTT-интеграции, WebSocket и файловое хранилище. Python/FastAPI и React; часть интеграций ещё в разработке.</p><a class="btn btn-primary" data-i18n="project_source" href="https://github.com/MarselDynamicIndustries/MarsFlowHomeAssistant" rel="noopener noreferrer" target="_blank">Код на GitHub</a></div></div><div aria-hidden="true" aria-labelledby="projectModal4Title" aria-modal="true" class="modal" id="projectModal4" role="dialog"><div class="modal-content"><button aria-label="Закрыть / Close" class="modal-close" data-close-modal="">✕</button><img alt="" class="modal-art" height="1024" loading="lazy" src="assets/projects/finance-cover.png" width="1536"/><div class="project-stack">Python · PySide6 · SQLite</div><h3 data-i18n="modal_4_title" id="projectModal4Title">Finance Calculator</h3><p data-i18n="modal_4_text">Настольное приложение для личного бюджета: доходы и расходы, категории, цели, графики и экспорт. Python, PySide6 и SQLite; предусмотрены резервные копии данных.</p><a class="btn btn-primary" data-i18n="project_source" href="https://github.com/MarselDynamicIndustries/FinanceCalculator" rel="noopener noreferrer" target="_blank">Код на GitHub</a></div></div><p class="art-note" data-i18n="art_note">Авторские иллюстрации проектов · не скриншоты интерфейсов</p></section>
 
-    <header class="header">
-      <a href="#home" class="logo">CV<span>Live</span></a>
-      <nav class="nav">
-        <a href="#about" data-i18n="nav_about">Обо мне</a>
-        <a href="#skills" data-i18n="nav_skills">Навыки</a>
-        <a href="#projects" data-i18n="nav_projects">Проекты</a>
-        <a href="#" id="openPhonePanelNav" data-i18n="nav_contact">Контакты</a>
-      </nav>
-      <div class="lang-select-wrap" title="Language">
-        <span>🌐</span>
-        <select id="langSelect" aria-label="Выбор языка">
-          <option value="de">Deutsch</option>
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="fr">Français</option>
-          <option value="it">Italiano</option>
-          <option value="ru" selected>Русский</option>
-          <option value="tr">Türkçe</option>
-          <option value="zh">中文</option>
-        </select>
-      </div>
-      <button id="themeToggle" class="theme-toggle" aria-label="Сменить тему">🌙</button>
-    </header>
 
-    <main id="home">
-      <section class="hero reveal">
-        <div>
-          <p class="kicker" data-i18n="hero_kicker">Cybersecurity Specialist</p>
-          <h1 data-i18n-html="hero_title">Привет, я <span class="accent">Марсель Мухамеджанов Ильдарович</span></h1>
-          <p class="hero-text" data-i18n="hero_text">
-            Занимаюсь кибербезопасностью: защищаю инфраструктуру, анализирую
-            уязвимости и повышаю устойчивость систем к атакам.
-          </p>
-          <div class="cta-group">
-            <a class="btn btn-primary" href="#projects" data-i18n="hero_projects_btn">Смотреть проекты</a>
-            <button class="btn btn-ghost" id="openPhonePanelBtn" type="button" data-i18n="hero_contact_btn">Связаться</button>
-          </div>
-        </div>
-        <div class="stats-card floating-card">
-          <img src="assets/avatar.svg" alt="Портрет в векторном стиле" class="avatar" loading="lazy" />
-          <h3 data-i18n="stats_title">Коротко обо мне</h3>
-          <ul>
-            <li data-i18n-html="stats_item_1"><strong>1</strong> год в информационной безопасности</li>
-            <li data-i18n-html="stats_item_2"><strong>2 года</strong> практики в пентесте и security-аудите до официальной работы</li>
-            <li data-i18n-html="stats_item_3"><strong>Неформально</strong> вел задачи сетевого администрирования в проектной практике</li>
-            <li data-i18n-html="stats_item_4"><strong>200+</strong> реализованных проектов в разных направлениях</li>
-            <li data-i18n-html="stats_item_5"><strong>24/7</strong> фокус на надежность и безопасность</li>
-          </ul>
-        </div>
-      </section>
 
-      <section id="about" class="section reveal">
-        <h2 data-i18n="about_title">Обо мне</h2>
-        <p data-i18n="about_text">
-          Я специалист по ИБ: провожу аудит безопасности, тестирование на
-          проникновение и выстраиваю процессы защиты. До официальной работы в
-          ИБ два года занимался пентестом и аудитом в формате частной практики.
-          Также есть проектный неформальный опыт сетевого администрирования.
-          При этом умею во frontend, поэтому могу закрывать задачи на стыке
-          безопасности и интерфейсов.
-        </p>
-      </section>
 
-      <section id="education" class="section reveal">
-        <h2 data-i18n="edu_title">Образование</h2>
-        <div class="skills-matrix">
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="edu_college">Колледж</h3>
-              <span class="level level-mid" data-i18n="edu_college_level">Завершено</span>
-            </div>
-            <p data-i18n="edu_college_text">Программист по образованию (среднее профессиональное образование).</p>
-          </article>
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="edu_uni">Институт</h3>
-              <span class="level level-junior" data-i18n="edu_uni_level">В процессе</span>
-            </div>
-            <p data-i18n="edu_uni_text">Обучаюсь на последнем курсе, продолжаю развиваться в ИБ и разработке.</p>
-          </article>
-        </div>
-      </section>
 
-      <section id="skills" class="section reveal">
-        <h2 data-i18n="skills_title">Навыки</h2>
-        <div class="skills-matrix">
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="skills_langdev_title">Языки и разработка</h3>
-              <span class="level level-mid" data-i18n="level_middle">Middle</span>
-            </div>
-            <div class="lang-marquee" aria-label="Логотипы языков программирования">
-              <div class="lang-track">
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />Java</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />C</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />C++</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />C#</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />Python</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua" />Lua</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" />Ruby</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />TypeScript</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" />Sass</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SCSS" />SCSS</span>
-                <span class="lang-pill"><img src="assets/tailwindcss.svg" alt="Tailwind CSS" />Tailwind</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />Java</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />C</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />C++</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />C#</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />Python</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua" />Lua</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" />Ruby</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />TypeScript</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" />Sass</span>
-                <span class="lang-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SCSS" />SCSS</span>
-                <span class="lang-pill"><img src="assets/tailwindcss.svg" alt="Tailwind CSS" />Tailwind</span>
-              </div>
-            </div>
-          </article>
 
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="ai_title">AI и автоматизация</h3>
-              <span class="level level-mid" data-i18n="level_middle">Middle</span>
-            </div>
-            <p data-i18n="ai_text">Использование AI для анализа кода и уязвимостей, ускорение pentest/appsec задач, автоматизация рутинных процессов через AI-инструменты, prompt engineering для рабочих сценариев.</p>
-          </article>
-
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="skills_os_title">ОС и администрирование</h3>
-              <span class="level level-senior" data-i18n="level_senior">Senior</span>
-            </div>
-            <p data-i18n="skills_os_text">Linux Administration, Windows Server, Active Directory, Kali Linux, OSQuery, Velociraptor</p>
-          </article>
-
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="skills_networks_title">Сети</h3>
-              <span class="level level-senior" data-i18n="level_senior">Senior</span>
-            </div>
-            <p data-i18n="skills_networks_text">TCP/IP, OSI Model, DNS/DHCP, Routing & Switching, VLAN/VPN, Firewall Rules, NAT/PAT, Wireshark, Suricata, Zeek</p>
-          </article>
-
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="skills_pentest_title">Pentest</h3>
-              <span class="level level-senior" data-i18n="level_senior">Senior</span>
-            </div>
-            <p data-i18n="skills_pentest_text">Nmap, Metasploit, Burp Suite, OWASP ZAP, Nikto, Gobuster, SQLMap, Hydra, John the Ripper, Hashcat</p>
-          </article>
-
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="skills_appsec_title">AppSec / Code Security</h3>
-              <span class="level level-senior" data-i18n="level_senior">Senior</span>
-            </div>
-            <p data-i18n="skills_appsec_text">Semgrep, Snyk, SonarQube, Trivy, Dependency-Check, Checkmarx, GitHub Advanced Security, DefectDojo</p>
-          </article>
-
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="skills_soc_title">SOC / SIEM / IR</h3>
-              <span class="level level-senior" data-i18n="level_senior">Senior</span>
-            </div>
-            <p data-i18n="skills_soc_text">Splunk, Wazuh, ELK Stack, Graylog, TheHive, Cortex, MISP, CrowdSec</p>
-          </article>
-
-          <article class="matrix-row">
-            <div class="matrix-head">
-              <h3 data-i18n="skills_devops_title">DevOps и инструменты</h3>
-              <span class="level level-junior" data-i18n="level_junior">Junior+</span>
-            </div>
-            <p data-i18n="skills_devops_text">Docker, VMware/VirtualBox, Git/GitHub/GitLab, CI/CD, Vite, Figma</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="section reveal">
-        <h2 data-i18n="projects_title">Проекты</h2>
-        <div class="projects-strip" id="projectsStrip">
-          <article class="project-card open-modal-btn" data-modal="projectModal1" tabindex="0" role="button">
-            <img
-              src="assets/projects/security-dashboard.svg"
-              alt="Иллюстрация проекта Security Dashboard"
-              class="project-image"
-              loading="lazy"
-            />
-            <h3 data-i18n="project_1_title">Security Dashboard</h3>
-            <p data-i18n="project_1_text">
-              Панель мониторинга инцидентов с приоритизацией рисков и
-              визуализацией уязвимостей по системам.
-            </p>
-          </article>
-          <article class="project-card open-modal-btn" data-modal="projectModal2" tabindex="0" role="button">
-            <img
-              src="assets/projects/vulnerability-scanner.svg"
-              alt="Иллюстрация проекта Vulnerability Scanner UI"
-              class="project-image"
-              loading="lazy"
-            />
-            <h3 data-i18n="project_2_title">Vulnerability Scanner UI</h3>
-            <p data-i18n="project_2_text">
-              Интерфейс для результатов сканирования: CVE, severity, remediation
-              шаги и экспорт отчетов.
-            </p>
-          </article>
-          <article class="project-card open-modal-btn" data-modal="projectModal3" tabindex="0" role="button">
-            <img
-              src="assets/projects/soc-landing.svg"
-              alt="Иллюстрация проекта SOC Landing"
-              class="project-image"
-              loading="lazy"
-            />
-            <h3 data-i18n="project_3_title">SOC Landing</h3>
-            <p data-i18n="project_3_text">
-              Лендинг для SOC-сервиса с акцентом на доверие, SLA и быструю
-              коммуникацию с клиентами.
-            </p>
-          </article>
-          <article class="project-card open-modal-btn" data-modal="projectModal4" tabindex="0" role="button">
-            <img
-              src="assets/projects/security-dashboard.svg"
-              alt="Иллюстрация проекта Network Hardening Lab"
-              class="project-image"
-              loading="lazy"
-            />
-            <h3 data-i18n="project_4_title">Network Hardening Lab</h3>
-            <p data-i18n="project_4_text">
-              Практический стенд по сегментации сети, настройке firewall rules,
-              VPN и мониторингу сетевых аномалий.
-            </p>
-          </article>
-          <article class="project-card open-modal-btn" data-modal="projectModal5" tabindex="0" role="button">
-            <img
-              src="assets/projects/vulnerability-scanner.svg"
-              alt="Иллюстрация проекта AppSec CI Pipeline"
-              class="project-image"
-              loading="lazy"
-            />
-            <h3 data-i18n="project_5_title">AppSec CI Pipeline</h3>
-            <p data-i18n="project_5_text">
-              Интеграция SAST/SCA/Container scanning в CI: Semgrep, Snyk, Trivy
-              с отчетами и автоматизацией triage.
-            </p>
-          </article>
-          <article class="project-card open-modal-btn" data-modal="projectModal6" tabindex="0" role="button">
-            <img
-              src="assets/projects/soc-landing.svg"
-              alt="Иллюстрация проекта Incident Response Playbooks"
-              class="project-image"
-              loading="lazy"
-            />
-            <h3 data-i18n="project_6_title">Incident Response Playbooks</h3>
-            <p data-i18n="project_6_text">
-              Набор IR-сценариев и шаблонов реагирования для SOC: от алерта до
-              пост-инцидентного отчета и lessons learned.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <div id="projectModal1" class="modal" aria-hidden="true">
-        <div class="modal-content">
-          <button class="modal-close" data-close-modal>✕</button>
-          <h3 data-i18n="modal_1_title">Security Dashboard</h3>
-          <p data-i18n="modal_1_text">Центр мониторинга инцидентов: агрегация логов, риск-скоринг, таймлайн событий и приоритеты реагирования.</p>
-        </div>
-      </div>
-      <div id="projectModal2" class="modal" aria-hidden="true">
-        <div class="modal-content">
-          <button class="modal-close" data-close-modal>✕</button>
-          <h3 data-i18n="modal_2_title">Vulnerability Scanner UI</h3>
-          <p data-i18n="modal_2_text">Интерфейс анализа уязвимостей с triage по CVSS, дедупликацией и назначением remediation-задач.</p>
-        </div>
-      </div>
-      <div id="projectModal3" class="modal" aria-hidden="true">
-        <div class="modal-content">
-          <button class="modal-close" data-close-modal>✕</button>
-          <h3 data-i18n="modal_3_title">SOC Landing</h3>
-          <p data-i18n="modal_3_text">Лендинг сервиса с акцентом на SLA, процесс онбординга и прозрачную коммуникацию при инцидентах.</p>
-        </div>
-      </div>
-      <div id="projectModal4" class="modal" aria-hidden="true">
-        <div class="modal-content">
-          <button class="modal-close" data-close-modal>✕</button>
-          <h3 data-i18n="modal_4_title">Network Hardening Lab</h3>
-          <p data-i18n="modal_4_text">Лаборатория для практики хардненинга: сегментация VLAN, VPN-туннели, firewall policy и проверка устойчивости.</p>
-        </div>
-      </div>
-      <div id="projectModal5" class="modal" aria-hidden="true">
-        <div class="modal-content">
-          <button class="modal-close" data-close-modal>✕</button>
-          <h3 data-i18n="modal_5_title">AppSec CI Pipeline</h3>
-          <p data-i18n="modal_5_text">Пайплайн DevSecOps со сканированием кода и зависимостей, quality gates и автоматическим формированием отчетов.</p>
-        </div>
-      </div>
-      <div id="projectModal6" class="modal" aria-hidden="true">
-        <div class="modal-content">
-          <button class="modal-close" data-close-modal>✕</button>
-          <h3 data-i18n="modal_6_title">Incident Response Playbooks</h3>
-          <p data-i18n="modal_6_text">Стандартизированные playbooks для SOC: классификация инцидента, containment, eradication и post-mortem.</p>
-        </div>
-      </div>
-
-    </main>
-
-    <aside id="phonePanel" class="phone-panel" aria-hidden="true">
-      <div class="phone-shell">
-        <div class="phone-notch"></div>
-        <button class="phone-close" id="closePhonePanel" aria-label="Закрыть контакты">✕</button>
-        <h3 data-i18n="contact_title">Связаться</h3>
-        <p class="phone-sub" data-i18n="contact_subtitle">Быстрые контакты</p>
-        <div class="phone-contact-list">
-          <a href="tel:+79092951115" data-i18n="contact_phone">📞 +7 (909) 295-11-15</a>
-          <a href="mailto:marselmuhamedzanoa@gmail.com" data-i18n="contact_email">✉️ marselmuhamedzanoa@gmail.com</a>
-          <a href="https://t.me/llfatell" target="_blank" rel="noreferrer" data-i18n="contact_telegram">💬 Telegram: @llfatell</a>
-          <a href="https://github.com/HARLEQU1IN" target="_blank" rel="noreferrer" data-i18n="contact_github">🐙 GitHub: HARLEQU1IN</a>
-        </div>
-      </div>
-    </aside>
-
-    <footer class="footer">© <span id="year"></span> Марсель Мухамеджанов Ильдарович</footer>
-    <script src="script.js"></script>
-  </body>
+<section class="section contact-section" id="contact"><p class="kicker">LET’S CONNECT</p><h2 class="motion-heading" data-i18n="contact_cta">Написать мне</h2><div class="phone-contact-list">
+<a data-i18n="contact_phone" href="tel:+79092951115">📞 +7 (909) 295-11-15</a>
+<a data-i18n="contact_email" href="mailto:marselmuhamedzanoa@gmail.com">✉️ marselmuhamedzanoa@gmail.com</a>
+<a data-i18n="contact_telegram" href="https://t.me/llfatell" rel="noreferrer" target="_blank">💬 Telegram: @llfatell</a>
+<a data-i18n="contact_github" href="https://github.com/MarselDynamicIndustries" rel="noreferrer" target="_blank">GitHub: MarselDynamicIndustries</a>
+</div></section></main>
+<footer class="footer">© <span id="year"></span> Мухамеджанов Марсель Ильдарович</footer>
+<script src="script.js"></script>
+</body>
 </html>
